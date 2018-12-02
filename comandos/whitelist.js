@@ -13,7 +13,7 @@ exports.run = async (client, message, args) => {
         return;
     }
     // 402216351885950977
-    let m = message.mentions.member.first();
+    let _m = message.mentions.members.first();
     if(!m) {
         let embed = new Discord.RichEmbed();
         embed.setColor(`RANDOM`);
