@@ -23,6 +23,7 @@ exports.run = async (client, message, args) => {
         message.channel.send(embed);
         return;
     }
+    let m = _m;
     if(!message.member.highestRole.comparePositionTo(m.highestRole) > 0){
         let embed = new Discord.RichEmbed();
         embed.setColor(`RANDOM`);
