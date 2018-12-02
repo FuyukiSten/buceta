@@ -22,6 +22,7 @@ exports.run = async (client, message, args) => {
         message.channel.send(embed);
         return;
     }    
+    let m = _m;
     if(!client.db[m.id]) client.db[m.id] = {
         blacklist: false
       };
