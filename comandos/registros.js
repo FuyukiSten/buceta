@@ -6,7 +6,7 @@ sql.open("./database/registrosdb.sql");
 const moment = require('moment');
 exports.run = async (client, message, args) => {
     // eu ia fazer comentarios sobre como funciona tudo aq mas, deu uma preguiça né
-    if(!message.member.roles.some(r=>["Organizadores Especiais"].includes(r.name)) )
+    if(!message.member.roles.some(r=>["Organizador Especial"].includes(r.name)) )
     {
         let _e = new Discord.RichEmbed();
         _e.setColor(0xff3232);
