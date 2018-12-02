@@ -21,7 +21,8 @@ exports.run = async (client, message, args) => {
         embed.setAuthor(message.author.username, message.author.avatarURL);
         message.channel.send(embed);
         return;
-    }    
+    } 
+    let m = _m;   
     if(!client.db[m.id]) client.db[m.id] = {
         blacklist: false
       };
