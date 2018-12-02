@@ -14,7 +14,7 @@ exports.run = async (client, message, args) => {
     }
     // 402216351885950977
     let _m = message.mentions.members.first();
-    if(!m) {
+    if(!_m) {
         let embed = new Discord.RichEmbed();
         embed.setColor(`RANDOM`);
         embed.setDescription('Mencione um membro para usar esse comando.');
