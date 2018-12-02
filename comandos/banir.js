@@ -23,7 +23,7 @@ exports.run = async (client, message, args) => {
         message.channel.send(embed);
         return;
     }
-    
+    let m = _m;
     if(!m.bannable) {
         let embed = new Discord.RichEmbed();
         embed.setColor(`RANDOM`);
